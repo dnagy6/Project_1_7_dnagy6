@@ -86,7 +86,16 @@ while running:
             # Iteration and unpacking (list items and tuple unpacking)
             for race_name, miles in race_distances:
                 estimated_time = pace_per_mile * miles
-                print(f"{race_name} ({miles} mi): {estimated_time:.2f} minutes")
+
+                # Convert total est. minutes into HH:MM:SS format
+                est_hours = int(estimated_time // 60)
+                est_minutes = int(estimated_time % 60)
+                est_seconds = int((estimated_time - int(estimated_time)) * 60)
+
+                if est_hours > 0:
+                    print(f"{race_name} ({miles} mi): {est_hours}h {est_minutes:02d}m {est_seconds:02d}s")
+                else:
+                    print(f"{race_name} ({miles} mi): {est_minutes}m {est_seconds:02d}s")
 
                 
         except ValueError:
