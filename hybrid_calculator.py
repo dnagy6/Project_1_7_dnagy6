@@ -12,6 +12,9 @@ Chapters: 1-7 - Python Basics, Control Flow, Functions, Data Structures, OOP, Mo
 
 running = True
 
+# Creating a simplee dictionary to store the users PRs.
+user_maxes = {}
+
 while running:
     print("\nWelcome to the Hybrid Training & Pace Calculator!")
     print("Please select an option:")
@@ -24,7 +27,11 @@ while running:
     if choice == '1':
         # Barbell Percentage Calculator
         try:
+            lift_name = input("Enter the name of the lift (e.g., Squat, Bench Press, Deadlift): ")
             max_weight = float(input("Enter your one-rep max weight (in pounds): "))
+            
+            # Saving the lift and max weight to the user_maxes dictionary
+            user_maxes[lift_name] = max_weight
             
             # Dictionary with Tuples to store percentages AND rep ranges
             training_block = {
