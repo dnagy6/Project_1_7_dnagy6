@@ -43,16 +43,16 @@ while running:
             
             print(f"\n--- 4-Week Training Block for {max_weight} lbs ---")
             
-            # Iteration and unpacking (dictionary items and tuple unpacking)
+            # Iterating through the dictionary and unpacking the tuple
             for week, block_data in training_block.items():
                 percent_decimal = block_data[0]
                 rep_range = block_data[1]
                 
                 calculated_weight = max_weight * percent_decimal
                 print(f"{week}: {calculated_weight:.2f} lbs | Target: {rep_range}")
-        
-                print(f"\n[Session maxes stored: {user_maxes}]")  # Displaying the stored maxes for reference
                 
+            # This is unindented to ensure it only prints ONCE after the loop finishes
+            print(f"\n[Session maxes stored: {user_maxes}]")
         except ValueError:
             print("Invalid input. Please enter numeric values.")
             
