@@ -56,7 +56,6 @@ while running:
             print(f"\n[Session maxes stored: {user_maxes}]")
         except ValueError:
             print("Invalid input. Please enter numeric values.")
-            
     elif choice == '2':
         # Running Pace Split Calculator
         try:
@@ -80,13 +79,21 @@ while running:
             for race_name, miles in race_distances:
                 estimated_time = pace_per_mile * miles
                 print(f"{race_name} ({miles} mi): {estimated_time:.2f} minutes")
+
                 
         except ValueError:
             print("Invalid input. Please enter numeric values.")
             
     elif choice == '3':
+        if user_maxes:
+            print("\n--- Stored Maxes ---")
+            for lift, max_weight in user_maxes.items():
+                print(f"{lift}: {max_weight} lbs")
+        else:
+            print("No maxes stored yet. Please use the Lifting Calculator to add your maxes.")
+    elif choice == '4':
         print("Thank you for using the Hybrid Training & Pace Calculator. Goodbye!")
         running = False
         
     else:
-        print("Invalid choice. Please select option 1, 2, or 3.")
+        print("Invalid choice. Please select option 1, 2, 3, or 4.")
