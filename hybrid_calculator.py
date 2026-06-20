@@ -66,8 +66,8 @@ while running:
             pace_per_mile = total_time / total_distance
 
             # MM:SS format conversion
-            pac_mins = int(pace_per_mile)
-            pac_secs = int((pace_per_mile - pac_mins) * 60)
+            pace_mins = int(pace_per_mile)
+            pace_secs = int((pace_per_mile - pace_mins) * 60)
 
             
             pace_per_mile = total_time / total_distance
