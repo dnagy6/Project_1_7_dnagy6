@@ -27,7 +27,7 @@ while running:
     if choice == '1':
         # Barbell Percentage Calculator
         try:
-            lift_name = input("Enter the name of the lift (e.g., Squat, Bench Press, Deadlift): ")
+            lift_name = input("Enter the name of the lift (e.g., Squat, Bench Press, Deadlift): ").title()
             max_weight = float(input("Enter your one-rep max weight (in pounds): "))
             
             # Saving the lift and max weight to the user_maxes dictionary
