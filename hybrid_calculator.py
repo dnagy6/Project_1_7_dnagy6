@@ -20,9 +20,10 @@ while running:
     print("Please select an option:")
     print("1. Lifting Calculator (Barbell Percentage)")
     print("2. Pace Split Calculator (Running)")
-    print("3. Exit")
+    print("3. View Stored Maxes")
+    print("4. Exit")
     
-    choice = input("Enter your choice (1, 2, or 3): ")
+    choice = input("Enter your choice (1, 2, 3, or 4): ")
     
     if choice == '1':
         # Barbell Percentage Calculator
