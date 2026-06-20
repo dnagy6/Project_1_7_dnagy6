@@ -61,9 +61,17 @@ while running:
         try:
             total_distance = float(input("Enter the total distance of your run (in miles): "))
             total_time = float(input("Enter your total time for the run (in minutes): "))
+
+            # Pace in decimal form (minutes per mile)
+            pace_per_mile = total_time / total_distance
+
+            # MM:SS format conversion
+            pac_mins = int(pace_per_mile)
+            pac_secs = int((pace_per_mile - pac_mins) * 60)
+
             
             pace_per_mile = total_time / total_distance
-            print(f"\nYour baseline pace per mile is: {pace_per_mile:.2f} minutes/mile")
+            print(f"\nYour baseline pace per mile is: {pace_mins}:{pace_secs:02d} / mile")
             
             print("\n--- Estimated Race Finish Times at this Pace ---")
             
