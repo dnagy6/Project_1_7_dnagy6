@@ -32,7 +32,7 @@ while running:
             
             # Saving the lift and max weight to the user_maxes dictionary
             user_maxes[lift_name] = max_weight
-            
+
             # Dictionary with Tuples to store percentages AND rep ranges
             training_block = {
                 "Week 1 (65%)": (0.65, "8-10 reps"),
@@ -50,6 +50,8 @@ while running:
                 
                 calculated_weight = max_weight * percent_decimal
                 print(f"{week}: {calculated_weight:.2f} lbs | Target: {rep_range}")
+        
+                print(f"\n[Session maxes stored: {user_maxes}]")  # Displaying the stored maxes for reference
                 
         except ValueError:
             print("Invalid input. Please enter numeric values.")
