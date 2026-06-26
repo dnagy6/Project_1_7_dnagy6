@@ -1,5 +1,6 @@
 # Project_1_7_dnagy6
-**[YOUTUBE LINK](https://youtu.be/ZtpWeXyEXUM)**
+**[YOUTUBE PRESENTATION LINK](https://youtu.be/ZtpWeXyEXUM)**
+**[PROJECT ONE PRESENTATION](https://docs.google.com/presentation/d/16mDrCYKQ2wJYi7E8zdR8FH5y7jyIvWsp0Kbldvw_LBI/edit?usp=sharing)**
 
 # Hybrid Training & Pace Calculator
 
