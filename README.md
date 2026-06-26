@@ -1,5 +1,5 @@
 # Project_1_7_dnagy6
-**YOUTUBE LINK WILL GO HERE**
+**[YOUTUBE LINK](https://youtu.be/ZtpWeXyEXUM)**
 
 # Hybrid Training & Pace Calculator
 
