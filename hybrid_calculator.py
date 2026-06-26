@@ -12,7 +12,6 @@ Chapters: 1-7 - Python Basics, Control Flow, Functions, Data Structures, OOP, Mo
 
 running = True
 
-# Creating a simplee dictionary to store the users PRs.
 user_maxes = {}
 
 while running:
@@ -31,10 +30,10 @@ while running:
             lift_name = input("Enter the name of the lift (e.g., Squat, Bench Press, Deadlift): ").title()
             max_weight = float(input("Enter your one-rep max weight (in pounds): "))
             
-            # Saving the lift and max weight to the user_maxes dictionary
+            
             user_maxes[lift_name] = max_weight
 
-            # Dictionary with Tuples to store percentages AND rep ranges
+            # Standard 4-week linear strength progression block with percentages and rep ranges
             training_block = {
                 "Week 1 (65%)": (0.65, "8-10 reps"),
                 "Week 2 (75%)": (0.75, "5-7 reps"),
@@ -44,7 +43,7 @@ while running:
             
             print(f"\n--- 4-Week Training Block for {max_weight} lbs ---")
             
-            # Iterating through the dictionary and unpacking the tuple
+           
             for week, block_data in training_block.items():
                 percent_decimal = block_data[0]
                 rep_range = block_data[1]
@@ -62,7 +61,7 @@ while running:
             total_distance = float(input("Enter the total distance of your run (in miles): "))
             total_time = float(input("Enter your total time for the run (in minutes): "))
 
-            # Pace in decimal form (minutes per mile)
+            
             pace_per_mile = total_time / total_distance
 
             # MM:SS format conversion
@@ -83,7 +82,7 @@ while running:
                 ("Marathon", 26.2)
             ]
             
-            # Iteration and unpacking (list items and tuple unpacking)
+            
             for race_name, miles in race_distances:
                 estimated_time = pace_per_mile * miles
 
